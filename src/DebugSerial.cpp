@@ -5,7 +5,7 @@
  * Author		: Bernd Waldmann
  * Tabsize		: 4
  *
- * This Revision: $Id: DebugSerial.cpp 1016 2021-05-10 10:22:10Z  $
+ * This Revision: $Id: DebugSerial.cpp 1053 2021-06-01 17:25:06Z  $
  * 
  * @brief Output strings to UART via HardwareSerial class, unless RXD is pulled low, 
  * i.e. FTDI not connected.
@@ -67,7 +67,7 @@ size_t DebugSerialClass::write(uint8_t aByte)
 /**
  * @brief wait until all output has been sent (overloaded virtual functiom from Print class)
  * 
- *//
+ */
 void DebugSerialClass::flush()
 {
 	_serial.flush();
